@@ -5,8 +5,8 @@ const Contact = () => {
     return (
         <div className="w-full bg-background pt-32 pb-24 min-h-screen">
             <div className="container mx-auto px-6 max-w-6xl">
-                
-                <motion.div 
+
+                <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
@@ -21,19 +21,19 @@ const Contact = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-16 lg:gap-24">
                     {/* Contact Info */}
-                    <motion.div 
+                    <motion.div
                         initial={{ opacity: 0, x: -30 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.6, delay: 0.2 }}
                         className="space-y-10 bg-background p-10 shadow-lg border-t-4 border-primary"
                     >
                         <h3 className="font-heading text-2xl text-primary">Concierge Details</h3>
-                        
+
                         <div className="flex items-start">
                             <MapPin size={24} className="text-secondary mr-4 shrink-0 mt-1" />
                             <div>
                                 <h4 className="uppercase text-xs tracking-widest text-[#5A3A31]/60 font-bold mb-2">Boutique Address</h4>
-                                <p className="text-primary font-light leading-relaxed">123 Heritage Ave, Vasant Vihar<br/>New Delhi, India 110057</p>
+                                <p className="text-primary font-light leading-relaxed">123 Heritage Ave, Vasant Vihar<br />New Delhi, India 110057</p>
                             </div>
                         </div>
 
@@ -41,7 +41,7 @@ const Contact = () => {
                             <Phone size={24} className="text-secondary mr-4 shrink-0 mt-1" />
                             <div>
                                 <h4 className="uppercase text-xs tracking-widest text-[#5A3A31]/60 font-bold mb-2">Phone Inquiries</h4>
-                                <p className="text-primary font-light">+91 98765 43210</p>
+                                <p className="text-primary font-light">+91 7416719966</p>
                             </div>
                         </div>
 
@@ -57,20 +57,20 @@ const Contact = () => {
                             <Clock size={24} className="text-secondary mr-4 shrink-0 mt-1" />
                             <div>
                                 <h4 className="uppercase text-xs tracking-widest text-[#5A3A31]/60 font-bold mb-2">Operating Hours</h4>
-                                <p className="text-primary font-light leading-relaxed">Mon - Sat: 10:00 AM - 7:00 PM<br/>Sunday: Closed</p>
+                                <p className="text-primary font-light leading-relaxed">Mon - Sat: 10:00 AM - 7:00 PM<br />Sunday: Closed</p>
                             </div>
                         </div>
                     </motion.div>
 
                     {/* Contact Form */}
-                    <motion.div 
+                    <motion.div
                         initial={{ opacity: 0, x: 30 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.6, delay: 0.4 }}
                     >
                         <form className="space-y-8 bg-background p-10 shadow-lg">
                             <h3 className="font-heading text-2xl text-primary mb-6">Send a Message</h3>
-                            
+
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                                 <div className="space-y-2">
                                     <label className="text-xs uppercase tracking-widest text-[#5A3A31]/60">First Name</label>
